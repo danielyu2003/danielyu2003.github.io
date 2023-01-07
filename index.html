@@ -14,15 +14,9 @@
     <div class="sidebar">
       <div class="logo_content">
         <div class="logo">Daniel Yu</div>
-        
-        <div class="profile_content">
-          <div class="profile">
-            <div class="profile_details">
-              <img src="./img/profile.jpg">
-            </div>
-          </div>
-        </div>
-        
+        <!-- <div class="profile">
+          <img src="./img/profile.jpg">
+        </div> -->
         <i class='bx bx-menu' id="btn"></i>
       </div>
       <ul class="nav_list">
@@ -31,38 +25,59 @@
             <i class='bx bx-user'></i>
             <span class="links_name">About</span>
           </a>
-          <!-- <span class="tooltip">Dashboard</span> -->
+          <span class="tooltip">About</span>
         </li>
         <li>
           <a href="#">
             <i class='bx bx-book-open'></i>
             <span class="links_name">Skills</span>
           </a>
-          <!-- <span class="tooltip">Dashboard</span> -->
+          <span class="tooltip">Skills</span>
         </li>
         <li>
           <a href="#">
             <i class='bx bx-briefcase-alt' ></i>
             <span class="links_name">Work</span>
           </a>
-          <!-- <span class="tooltip">Dashboard</span> -->
+          <span class="tooltip">Work</span>
         </li>
         <li>
           <a href="#">
             <i class='bx bx-network-chart'></i>
             <span class="links_name">Projects</span>
           </a>
-          <!-- <span class="tooltip">Dashboard</span> -->
+          <span class="tooltip">Projects</span>
         </li>
         <li>
           <a href="#">
             <i class='bx bx-link' ></i>
             <span class="links_name">Links</span>
           </a>
-          <!-- <span class="tooltip">Dashboard</span> -->
+          <span class="tooltip">Links</span>
         </li>
       </ul>
+      <div class="profile">
+          <img src="./img/profile.jpg">
+          <div class="quote">
+            <p>"Not all those who wander are lost."<br>- Tolkien</p>
+          </div>
+      </div>
     </div>
+
+    <div class="content">
+      <div class="text">
+        Hi there!
+      </div>
+    </div>
+
+    <script>
+      let btn = document.querySelector("#btn");
+      let sidebar = document.querySelector(".sidebar");
+
+      btn.onclick = function() {
+        sidebar.classList.toggle("active");
+      }
+    </script>
 
  <!--    <h1>Daniel Yu</h1>
     <h2>Software developer by day, writer by night. Based in NJ.</h2>
