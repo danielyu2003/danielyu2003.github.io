@@ -73,9 +73,12 @@
     <script>
       let btn = document.querySelector("#btn");
       let sidebar = document.querySelector(".sidebar");
+      let isMobile = window.matchMedia("(pointer:coarse)").matches;
 
       btn.onclick = function() {
-        sidebar.classList.toggle("active");
+        if (!isMobile) {
+          sidebar.classList.toggle("active");
+        }
       }
     </script>
 
