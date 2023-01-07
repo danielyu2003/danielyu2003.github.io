@@ -51,7 +51,7 @@ body {
 
 .sidebar #btn {
   position: absolute;
-  left: 50%;
+  left: 55%;
   top: 6px;
   font-size: 20px;
   height: 50px;
@@ -172,6 +172,7 @@ body {
   font-size: 32px;
   font-weight: 500;
   margin: 12px;
+  text-align: center;
 }
 
 .content .text p {
@@ -184,3 +185,4 @@ body {
   width: calc(100% - 240px);
   left: 240px;
 }
+

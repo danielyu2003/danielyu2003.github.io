@@ -1,9 +1,4 @@
 # danielyu2003.github.io
 
-Things to include in website:
-
-* About me
-* Skills
-* Work
-* Projects
-* Links
+TODO:
+Figure out how to split content into sections with different background colors.
