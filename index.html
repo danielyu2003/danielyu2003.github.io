@@ -100,13 +100,11 @@
       let isMobile = window.matchMedia("(pointer:coarse)").matches;
 
       if (isMobile) {
-        document.getElementById("btn").style.opacity = 0;
+        document.getElementById("btn").remove();
       }
 
       btn.onclick = function() {
-        if (!isMobile) {
-          sidebar.classList.toggle("active");
-        }
+        sidebar.classList.toggle("active");
       }
     </script>
   </body>
