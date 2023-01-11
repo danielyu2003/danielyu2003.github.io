@@ -5,12 +5,21 @@
   font-family: "Lucida Console", "Courier New", monospace;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #EFE5D5;
   position: relative;
   min-height: 100vh;
   width: 100%;
-  overflow: hidden;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .sidebar {
@@ -171,14 +180,14 @@ body {
 .content .text {
   font-size: 32px;
   font-weight: 500;
-  margin: 12px;
   text-align: center;
 }
 
 .content .text p {
   font-size: 20px;
   font-weight: 500;
-  margin: 0;
+  margin: 12px;
+  padding: 12px;
 }
 
 .sidebar.active ~ .content {
@@ -186,3 +195,29 @@ body {
   left: 240px;
 }
 
+.navbar {
+  overflow: hidden;
+  position: relative;
+  bottom: 0;
+/*  width: calc(100% - 78px);
+  left: 78px;*/
+  transition: all 0.5s ease;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: #9e2123;
+  padding: 12px;
+}
+
+.sidebar.active ~ .navbar {
+  width: calc(100% - 240px);
+  left: 240px;
+}
+
+.navbar a {
+  margin: 20px;
+}
+
+.skills {
+}
