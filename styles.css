@@ -199,8 +199,6 @@ body::-webkit-scrollbar {
   overflow: hidden;
   position: relative;
   bottom: 0;
-/*  width: calc(100% - 78px);
-  left: 78px;*/
   transition: all 0.5s ease;
   align-items: center;
   text-align: center;
@@ -217,7 +215,4 @@ body::-webkit-scrollbar {
 
 .navbar a {
   margin: 20px;
-}
-
-.skills {
 }
