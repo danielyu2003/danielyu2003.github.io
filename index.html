@@ -64,7 +64,7 @@
         <div id="section_two">
           <br>
           <h6>Skills</h6>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel auctor arcu. Mauris ut turpis dictum, consectetur lacus at, efficitur risus. Praesent a arcu ante. Pellentesque ut venenatis sem. Nulla felis dolor, tempor at sapien nec, vulputate varius augue. Vivamus ut sapien ac nisi sodales ornare. Pellentesque vitae vestibulum ligula.</p>
+          <br>
           <div id="skills">
             <img src="./img/python-logo-72.png">
             <img src="./img/javascript-logo-72.png">
@@ -98,6 +98,10 @@
       let btn = document.querySelector("#btn");
       let sidebar = document.querySelector(".sidebar");
       let isMobile = window.matchMedia("(pointer:coarse)").matches;
+
+      if (isMobile) {
+        document.getElementById("btn").style.opacity = 0;
+      }
 
       btn.onclick = function() {
         if (!isMobile) {
