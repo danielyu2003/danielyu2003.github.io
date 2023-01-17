@@ -5,6 +5,12 @@
   font-family: "Lucida Console", "Courier New", monospace;
 }
 
+* img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
 html {
   scroll-behavior: smooth;
 }
