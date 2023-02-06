@@ -403,6 +403,154 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 24,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					2,
+					"left_delete",
+					null,
+					"AgAAABkAAAAAAAAAGQAAAAAAAABWAAAAClRPRE86CkZpZ3VyZSBvdXQgaG93IHRvIHNwbGl0IGNvbnRlbnQgaW50byBzZWN0aW9ucyB3aXRoIGRpZmZlcmVudCBiYWNrZ3JvdW5kIGNvbG9ycy4YAAAAAAAAABgAAAAAAAAAAQAAAAo",
+					"AQAAAAAAAAABAAAAbwAAAAAAAAAZAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 5112,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					5,
+					1,
+					"insert",
+					{
+						"characters": "Insert"
+					},
+					"BwAAANIMAAAAAAAA0wwAAAAAAAAAAAAA0wwAAAAAAADTDAAAAAAAACwAAABTdW1tZXIgMjAyMiBOZXVyb21lY2hhbmljcyBSZXNlYXJjaCBQcm9ncmFtLtMMAAAAAAAA1AwAAAAAAAAAAAAA1AwAAAAAAADVDAAAAAAAAAAAAADVDAAAAAAAANYMAAAAAAAAAAAAANYMAAAAAAAA1wwAAAAAAAAAAAAA1wwAAAAAAADYDAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA/gwAAAAAAADSDAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					6,
+					1,
+					"insert",
+					{
+						"characters": " roles"
+					},
+					"BgAAANgMAAAAAAAA2QwAAAAAAAAAAAAA2QwAAAAAAADaDAAAAAAAAAAAAADaDAAAAAAAANsMAAAAAAAAAAAAANsMAAAAAAAA3AwAAAAAAAAAAAAA3AwAAAAAAADdDAAAAAAAAAAAAADdDAAAAAAAAN4MAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA2AwAAAAAAADYDAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					7,
+					1,
+					"insert",
+					{
+						"characters": " and"
+					},
+					"BAAAAN4MAAAAAAAA3wwAAAAAAAAAAAAA3wwAAAAAAADgDAAAAAAAAAAAAADgDAAAAAAAAOEMAAAAAAAAAAAAAOEMAAAAAAAA4gwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA3gwAAAAAAADeDAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					8,
+					1,
+					"insert",
+					{
+						"characters": " reso"
+					},
+					"BQAAAOIMAAAAAAAA4wwAAAAAAAAAAAAA4wwAAAAAAADkDAAAAAAAAAAAAADkDAAAAAAAAOUMAAAAAAAAAAAAAOUMAAAAAAAA5gwAAAAAAAAAAAAA5gwAAAAAAADnDAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA4gwAAAAAAADiDAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					9,
+					1,
+					"left_delete",
+					null,
+					"AQAAAOYMAAAAAAAA5gwAAAAAAAABAAAAbw",
+					"AQAAAAAAAAABAAAA5wwAAAAAAADnDAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					10,
+					1,
+					"insert",
+					{
+						"characters": "ponsibilities"
+					},
+					"DQAAAOYMAAAAAAAA5wwAAAAAAAAAAAAA5wwAAAAAAADoDAAAAAAAAAAAAADoDAAAAAAAAOkMAAAAAAAAAAAAAOkMAAAAAAAA6gwAAAAAAAAAAAAA6gwAAAAAAADrDAAAAAAAAAAAAADrDAAAAAAAAOwMAAAAAAAAAAAAAOwMAAAAAAAA7QwAAAAAAAAAAAAA7QwAAAAAAADuDAAAAAAAAAAAAADuDAAAAAAAAO8MAAAAAAAAAAAAAO8MAAAAAAAA8AwAAAAAAAAAAAAA8AwAAAAAAADxDAAAAAAAAAAAAADxDAAAAAAAAPIMAAAAAAAAAAAAAPIMAAAAAAAA8wwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA5gwAAAAAAADmDAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					19,
+					1,
+					"paste",
+					null,
+					"AgAAAH8OAAAAAAAAoA4AAAAAAAAAAAAAoA4AAAAAAACgDgAAAAAAACwAAABTdW1tZXIgMjAyMiBOZXVyb21lY2hhbmljcyBSZXNlYXJjaCBQcm9ncmFtLg",
+					"AQAAAAAAAAABAAAAfw4AAAAAAACrDgAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "styles.css",
+			"settings":
+			{
+				"buffer_size": 3924,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					1,
+					"insert",
+					{
+						"characters": "\n\n"
+					},
+					"AgAAAHUAAAAAAAAAdgAAAAAAAAAAAAAAdgAAAAAAAAB3AAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAdQAAAAAAAAB1AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					4,
+					1,
+					"paste",
+					null,
+					"AQAAAHcAAAAAAAAAwgAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAdwAAAAAAAAB3AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					11,
+					1,
+					"insert",
+					{
+						"characters": "*"
+					},
+					"AQAAAHcAAAAAAAAAeAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAdwAAAAAAAAB3AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					12,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAHgAAAAAAAAAeQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAeAAAAAAAAAB4AAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -513,7 +661,6 @@
 	"expanded_folders":
 	[
 		"/Users/danielyu/Desktop/danielyu2003.github.io",
-		"/Users/danielyu/Desktop/danielyu2003.github.io/img",
 		"/Users/danielyu/Desktop/danielyu2003.github.io/src"
 	],
 	"file_history":
@@ -607,6 +754,98 @@
 		{
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 24,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								24,
+								24
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.html",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5112,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3748,
+								3748
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1538.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "styles.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3924,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								121,
+								121
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -691,7 +930,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 268.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
