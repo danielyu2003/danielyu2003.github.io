@@ -1,3 +1,3 @@
 # danielyu2003.github.io
 
-j*vascript 🤢
+HTML/CSS for personal site (WIP)
