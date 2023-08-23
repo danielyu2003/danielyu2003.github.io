@@ -4,25 +4,34 @@
   box-sizing: border-box;
 }
 
-* img {
-    max-width: 100%;
-    height: auto;
-    width: auto\9;
-}
-
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: #EFE5D5;
+  background-color: #1d2021;
   position: relative;
   min-height: 100vh;
   width: 100%;
   -ms-overflow-style: none;  /* Internet Explorer 10+ */
   scrollbar-width: none;  /* Firefox */
+  color: #ebdbb2;
 }
 
 body::-webkit-scrollbar {
   display: none;
+}
+
+nav {
+  border-bottom: 1px solid black;
+}
+
+@font-face {
+  /* For headers, titles */
+  font-family: 'Karla', sans-serif;
+}
+
+@font-face {
+  /* For body, links */
+  font-family: 'Inconsolata', monospace;
 }
