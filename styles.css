@@ -36,8 +36,12 @@ footer {
   color: #928374;
 }
 
-a {
-  transition: color 0.15s;
+footer > p > a {
+  transition: filter 0.15s;
+}
+
+footer > p > a:hover {
+  filter: brightness(85%);
 }
 
 nav {
@@ -54,12 +58,16 @@ nav > ul > li {
   font-size: 24px;
 }
 
-body::-webkit-scrollbar {
-  display: none;
+nav > ul > li > a {
+  transition: filter 0.15s;
 }
 
-a:hover {
-  color: rgba(235, 219, 178, 0.7);
+nav > ul > li > a:hover {
+  filter: brightness(85%);
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .logo {
