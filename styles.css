@@ -58,14 +58,18 @@ nav > ul > li {
 
 footer > p > a, nav > ul > li > a, 
 .card_post > ol > li > h2 > a, 
-.card > ol > li > a {
+.card > ol > li > a,
+.arc_post > ul > li > a, 
+.arc_post > ol > li > a {
   transition: filter 0.15s;
 }
 
 footer > p > a:hover, 
 nav > ul > li > a:hover, 
 .card_post > ol > li > h2 > a:hover, 
-.card > ol > li > a:hover {
+.card > ol > li > a:hover,
+.arc_post > ul > li > a:hover, 
+.arc_post > ol > li > a:hover {
   filter: brightness(85%);
 }
 
@@ -86,11 +90,12 @@ body::-webkit-scrollbar {
 
 .card_link, .card_link:hover, 
 .card_post > ol > li > a, 
-.card > ol > li > a {
+.card > ol > li > a, 
+.arc_post > ul > li > a {
   text-decoration: none;
 }
 
-.card_post, .card {
+.card_post, .card, .arc_post {
   padding: 15px;
   padding-left: 20%;
   padding-right: 20%;
@@ -106,17 +111,23 @@ body::-webkit-scrollbar {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.card_post > h1, .card > h1 {
+.card_post > h1, 
+.card > h1,
+.arc_post > h1 {
   font-family: 'Karla', sans-serif;
 }
 
-.card_post > h3, .card > h3 {
+.card_post > h3, 
+.card > h3,
+.arc_post > h3 {
   font-family: 'Karla', sans-serif;
   font-style: italic;
   color: #928374;
 }
 
-.card_post > p, .card > p {
+.card_post > p, 
+.card > p,
+.arc_post > p {
   font-family: 'Inconsolata', monospace;
   font-size: large;
 }
@@ -136,14 +147,18 @@ body::-webkit-scrollbar {
   padding-right: 5px;
 }
 
-.card_post > ol > li {
-  padding-right: 25px !important;
-}
-
-.arc_list {
+.arc_post > ul > li, .arc_post > ol > li {
   font-family: 'Inconsolata', monospace;
   font-size: 16px;
-  display: list-item;
+  list-style-type: none;
+}
+
+.arc_post > ul > li > a, .arc_post > ol > li > a {
+  text-decoration: none;
+}
+
+.card_post > ol > li {
+  padding-right: 25px !important;
 }
 
 @font-face {
