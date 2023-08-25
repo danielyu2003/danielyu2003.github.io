@@ -8,7 +8,7 @@ Want to improve the blog? Open a pull request, or start a discussion [here](http
 
 ## Sponsors
 
-- None so far :(
+- None so far, but you could be the first!
 
 ## License
 
