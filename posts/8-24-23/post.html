@@ -34,19 +34,45 @@
 		<div class="card_post">
 			<h1>An AWK-ward primer<br></h1>
       <h3>8/24/2023</h3>
-      <p>
       <br>
-      	If you're a fan of old languages, or if you just want to write easy and fasts script that can parse text line by line (for example, CSV files), then learning AWK might be for you! I'll skip the history to let us get straight into the meat of learning the tool/language, although you should check out <a href="https://en.wikipedia.org/wiki/AWK">wikipedia</a> to learn more. By default, some flavor of AWK is included on macOS and most Linux distributions. Depending on which version you have, some features may be included or missing, but I'll be covering the base language in this post.
-				<br><br>
-				To start with, let's assume we have a csv file that we want to process in some way. It might contain a column of names as strings and a column of ages as integers, like such:
-				<br><br>
-				Andrew,22<br>
-				Bob,34<br>
-				Caroline,90<br>
-				Daniel,59<br>
-				...
-				<br><br>
+      <p>
+      	If you're a fan of old languages, or if you just want to write fast scripts that can easily parse text files, then learning AWK might be for you! I'll skip the history to let us get straight into the meat of learning the tool/language, although you should check out <a href="https://en.wikipedia.org/wiki/AWK">wikipedia</a> to learn more. 
       </p>
+      <br>
+      <p>
+      	By default, some flavor of AWK is included on macOS and most Linux distributions. Windows users must build and install AWK manually: I recommend <a href="https://gnuwin32.sourceforge.net/packages/gawk.htm">GAWK for Windows</a>. Depending on which variant you have, there may be extra or missing features. I'll be covering the base language supported by all versions of AWK. 
+			</p>
+			<br>
+			<p>
+				To start with, let's assume we have a CSV file that we want to process in some way. It might contain a column of names as strings and a column of ages as integers, like such:
+			</p>
+			<br>
+			<pre>
+Andrew,22
+Bob,34
+Caroline,90
+Daniel,59
+...
+			</pre>
+			<br>
+			<p>
+				Now, we want to print the result of a filter applied over each entry/row in the CSV through stdout. Let's say that we want to see the names of people who are at least 30 years old, in addition to the sum of their combined ages.
+			</p>
+			<br>
+			<p>
+				When an AWK program is run, it reads a stream line by line. Then, it can perform actions for each line and their tokens if they happen to fulfill a pattern. An AWK program is comprised of such pattern-action pairs, represented in the form
+			</p>
+			<br>
+
+			<pre>
+pattern { 
+	action1
+}
+			</pre>
+			<br>
+    	<p>
+    		text
+    	</p>
       <br>
       <ul>
         <li>#awk</li>

@@ -161,6 +161,12 @@ body::-webkit-scrollbar {
   padding-right: 25px !important;
 }
 
+.card_post > pre {
+  padding: 16px;
+  background-color: #1d2021;
+  border: 1px solid #a89984;
+}
+
 @font-face {
   /* For headers, titles */
   font-family: 'Karla', sans-serif;
