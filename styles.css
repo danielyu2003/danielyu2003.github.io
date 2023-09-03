@@ -132,6 +132,10 @@ body::-webkit-scrollbar {
   font-size: large;
 }
 
+.card_post > p > code {
+  color: #d3869b;
+}
+
 .card_post > ul > li, .card > ul > li {
   display: inline-block;
   font-style: italic;
@@ -165,6 +169,13 @@ body::-webkit-scrollbar {
   padding: 16px;
   background-color: #1d2021;
   border: 1px solid #a89984;
+  word-wrap: break-word;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  white-space: pre-wrap;
 }
 
 @font-face {
