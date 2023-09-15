@@ -178,6 +178,18 @@ body::-webkit-scrollbar {
   white-space: pre-wrap;
 }
 
+.card_post > figure > img {
+  border: 1px solid #a89984;
+}
+
+.card_post > figure > figcaption {
+  text-align: center;
+  font-family: 'Inconsolata', monospace;
+  font-style: italic;
+  font-size: 16px;
+  padding-top: 8px;
+}
+
 @font-face {
   /* For headers, titles */
   font-family: 'Karla', sans-serif;
