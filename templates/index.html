@@ -1,5 +1,11 @@
-{% extends "base.html" %}
+<!-- Landing page for base page -->
 <!-- corresponds to the _index.md in the content folder -->
+{% extends "base.html" %}
 {% block content %}
 {{ section.content | safe }}
+<ul>
+{% for page in section.pages %}
+<li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+{% endfor %}
+</ul>
 {% endblock content %}
