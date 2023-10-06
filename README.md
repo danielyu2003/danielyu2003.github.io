@@ -10,4 +10,4 @@ Want to improve the blog? Open a pull request, or start a discussion [here](http
 
 ## License
 
-This blog is licensed under the [GNU Affero GPLv3](https://choosealicense.com/licenses/agpl-3.0/).
+This blog is licensed under the [MIT License](https://choosealicense.com/licenses/mit/).
