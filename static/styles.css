@@ -1,8 +1,76 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+color: #ebdbb2;
+}
 
-nav ul li {
-display: inline-block;
+html {
+scroll-behavior: smooth;
 }
 
 body {
-color: red;
+font-family: 'Inconsolata', monospace;
+background-color: #282828;
+position: relative;
+width: 100%;
+}
+
+header {
+text-align: center;
+background-color: #1d2021;
+width: 100%;
+position: sticky; 
+top: 0;
+}
+
+nav {
+border-bottom: 1px solid #a89984;
+text-align: center;
+padding: 10px;
+}
+
+nav > ul > li {
+display: inline-block;
+padding: 10px;
+font-family: 'Inconsolata', monospace;
+font-weight: bold;
+font-size: 24px;
+}
+
+footer {
+text-align: center;
+bottom: 0;
+padding: 20px;
+font-family: 'Inconsolata', monospace;
+border-top: 1px solid #a89984;
+font-style: italic;
+color: #928374;
+}
+
+pre {
+padding: 1rem;
+overflow: auto;
+}
+
+pre[data-linenos] {
+padding: 1rem 0;
+}
+
+pre table td {
+  padding: 0;
+}
+
+pre table td:nth-of-type(1) {
+text-align: center;
+user-select: none;
+}
+
+pre mark {
+  display: block;
+  background-color: rgba(254, 252, 232, 0.9);
+}
+pre table {
+  width: 100%;
+  border-collapse: collapse;
 }

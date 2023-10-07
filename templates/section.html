@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+{{ section.title }}
+</h1>
+{{ section.content | safe }}
+
+{% block section_specific %}
+{% endblock section_specific %}
+
+<footer>
+{{ section.extra.footer }}
+</footer>
+
+{% endblock content %}

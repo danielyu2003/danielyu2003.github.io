@@ -2,9 +2,19 @@
 
 {% block content %}
 {{ section.content | safe }}
+
+<!-- access top 5 most recent pages -->
+
+{% set section = get_section(path="archive/_index.md") %}
 <ul>
 {% for page in section.pages %}
-<li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+  {% if loop.index > 5 %}{% break %}{% endif %}
+  <!-- TODO: make page card -->
+  <li>{{page.title}}</li>
 {% endfor %}
 </ul>
+
+<footer>
+<p>Check out the <a href="{{ get_url(path='@/archive/_index.md') }}" style="color: #B8BB26;">archive</a> to see all of my posts!</p>
+</footer>
 {% endblock content %}

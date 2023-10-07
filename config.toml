@@ -1,10 +1,14 @@
 base_url = "https://blog.danielyu.us"
+
 compile_sass = false
+
 build_search_index = false
+
+description = "Welcome to my blog! Let's learn about software, systems, and embedded technology."
 
 [markdown]
 highlight_code = false
 
 [extra]
-# Put custom variables here
+author.name = "Daniel Yu"
 site_name = "Coding With Y{o}u"

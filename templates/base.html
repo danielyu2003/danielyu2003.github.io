@@ -4,22 +4,35 @@
 <head>
 <meta charset="utf-8">
 <title>{{ config.extra.site_name }}</title>
-<link rel="stylesheet" href="{{ get_url(path='styles.css') }}"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="{{ config.description }}">
+<meta name="author" content="{{ config.extra.author.name }}">
+<link href="{{ config.base_url }}/styles.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fira+Code|Fira+Sans|Merriweather" rel="stylesheet">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ config.base_url }}/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ config.base_url }}/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ config.base_url }}/icons/favicon-16x16.png">
+<link rel="manifest" href="{{ config.base_url }}/icons/site.webmanifest">
+<link rel="mask-icon" href="{{ config.base_url }}/icons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="{{ config.base_url }}/icons/favicon.ico">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="msapplication-config" content="{{ config.base_url }}/icons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
 </head>
-
 <body>
 
-<nav>
-<ul>
+<header>
+<nav><ul>
 <li><a href="{{ get_url(path='@/_index.md') }}">Home</a></li>
-</ul>
-</nav>
+<li><a href="{{ get_url(path='@/about/_index.md') }}">About</a></li>
+<li><a href="{{ get_url(path='@/archive/_index.md') }}">Archive</a></li>
+<li><a href="{{ get_url(path='@/links/_index.md') }}">Links</a></li>
+</ul></nav>
+</header>
 
-{% block content %}{% endblock %}
-
-<footer>
-{{ page.extra.footer }}
-</footer>
+{% block content %}
+{% endblock %}
 
 </body>
 </html>

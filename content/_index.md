@@ -1,9 +1,9 @@
 +++
 title = "Home"
-[extra]
-footer = "test"
 +++
 
-# This is my blog made with Zola.
+# Test
 
-Testing...
+testing...
+
+<!-- put in links to the 10 most recent posts -->
