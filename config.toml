@@ -1,13 +1,8 @@
 base_url = "danielyu2003.github.io"
 
-compile_sass = false
-
-build_search_index = false
+title = "Coding With Y{o}u"
 
 description = "Welcome to my blog! Let's learn about software, systems, and embedded technology."
-
-[markdown]
-highlight_code = false
 
 [extra]
 author.name = "Daniel Yu"

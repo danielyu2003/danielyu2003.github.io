@@ -1,7 +1,5 @@
 # danielyu2003.github.io
 
-![#sublimeshame](https://img.shields.io/badge/%23sublimeshame-383D40?logo=sublimetext)
-
 HTML/CSS for my [blog](https://blog.danielyu.us)!
 
 ## Contributing
