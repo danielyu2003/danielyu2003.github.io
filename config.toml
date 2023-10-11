@@ -4,6 +4,10 @@ title = "Coding With Y{o}u"
 
 description = "Welcome to my blog! Let's learn about software, systems, and embedded technology."
 
+[markdown]
+highlight_code = true
+highlight_theme = "gruvbox-dark"
+
 [extra]
 author.name = "Daniel Yu"
 site_name = "Coding With Y{o}u"
