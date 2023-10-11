@@ -6,15 +6,19 @@
 <!-- access top 5 most recent pages -->
 
 {% set section = get_section(path="archive/_index.md") %}
-<ul>
+
 {% for page in section.pages %}
   {% if loop.index > 5 %}{% break %}{% endif %}
-  <!-- TODO: make page card -->
-  <li>{{page.title}}</li>
+  <a href="{{ page.permalink | safe }}" class="card_link"><div class="card">
+    <h1>{{ page.title }}<br></h1>
+    <h3>{{ page.date }}</h3>
+    <br>
+    <p>{{ page.summary | safe }}</p>
+  </div></a>
+  
 {% endfor %}
-</ul>
 
 <footer>
-<p>Check out the <a href="{{ get_url(path='@/archive/_index.md') }}" style="color: #B8BB26;">archive</a> to see all of my posts!</p>
+<p style="color: #7c6f64;">Check out the <a href="{{ get_url(path='@/archive/_index.md') }}">archive</a> to see all of my posts!</p>
 </footer>
 {% endblock content %}

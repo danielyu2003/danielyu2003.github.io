@@ -16,7 +16,7 @@ cat << EOF > index.md
 title = "tmp"
 date = $DATE
 [extra]
-footer = "tmp"
+footer = "Feel free to leave comments or requests <a href='https://github.com/danielyu2003/danielyu2003.github.io/discussions'>on the discussions page</a>!"
 +++
 
 insert summary

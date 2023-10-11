@@ -9,7 +9,7 @@
 <meta name="description" content="{{ config.description }}">
 <meta name="author" content="{{ config.extra.author.name }}">
 <link href="{{ config.base_url }}/styles.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Fira+Code|Fira+Sans|Merriweather" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata|Karla" rel="stylesheet">
 <link rel="apple-touch-icon" sizes="180x180" href="{{ config.base_url }}/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ config.base_url }}/icons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="{{ config.base_url }}/icons/favicon-16x16.png">
@@ -23,11 +23,13 @@
 <body>
 
 <header>
+<br>
+<div class="logo"><a href="#">Coding with Y{o}u</a></div>
 <nav><ul>
-<li><a href="{{ get_url(path='@/_index.md') }}">Home</a></li>
-<li><a href="{{ get_url(path='@/about/_index.md') }}">About</a></li>
-<li><a href="{{ get_url(path='@/archive/_index.md') }}">Archive</a></li>
-<li><a href="{{ get_url(path='@/links/_index.md') }}">Links</a></li>
+<li><a href="{{ get_url(path='@/_index.md') }}" style="color: #FB4934;">Home</a></li>
+<li><a href="{{ get_url(path='@/about/_index.md') }}" style="color: #FABD2F;">About</a></li>
+<li><a href="{{ get_url(path='@/archive/_index.md') }}" style="color: #B8BB26;">Archive</a></li>
+<li><a href="{{ get_url(path='@/links/_index.md') }}" style="color: #83A598;">Links</a></li>
 </ul></nav>
 </header>
 

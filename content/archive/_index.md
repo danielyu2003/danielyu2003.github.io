@@ -1,10 +1,8 @@
 +++
 title = "Archive"
 sort_by = "date"
-template = "archive-section.html"
+template = "archive.html"
 page_template = "page.html"
 [extra]
-footer = "archive footer"
+footer = "This blog is powered by the <a href='https://www.getzola.org/'>Zola engine</a>!"
 +++
-
-archive
