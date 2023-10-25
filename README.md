@@ -1,6 +1,6 @@
 # danielyu2003.github.io
 
-HTML/CSS for my [blog](https://blog.danielyu.us)!
+HTML/CSS for my [personal blog](https://blog.danielyu.us)! Check it out if you're interested in me rambling about technology, philosophy, literature, or anything else.
 
 ## Contributing
 
