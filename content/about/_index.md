@@ -8,7 +8,7 @@ footer = "On the Internet, nobody knows you're a dog."
 <h1>About<br></h1>
 <br>
 <p>
-My name is Daniel Yu. Among other things, I write software and like thinking about ways of improving our world. I want this site to be a place where I can share and store my thoughts on software development, cybernetics (the study of systems), and anything else that seems interesting or important enough to put down.<br>
+Welcome to my blog! My name's Daniel, and I like writing code and thinking about ways to improve our world. I want this site to be a place where I can store my thoughts on software development, cybernetics (the study of systems), and anything else that seems interesting or important enough to share.<br>
 <br>
 
 <img src="profile.png" alt="Original photo by The New York Public Library" style="max-width:300px; float: left; margin-right: 25px;">
