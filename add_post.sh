@@ -17,6 +17,7 @@ cat << EOF > index.md
 +++
 title = "tmp"
 date = $DATE
+authors = ["Daniel Yu"]
 [extra]
 footer = "Liked this post? Feel free to leave a comment <a href='https://github.com/danielyu2003/danielyu2003.github.io/discussions'>here</a>!"
 +++
