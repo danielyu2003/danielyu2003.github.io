@@ -27,7 +27,6 @@ footer = "Stay hungry. Stay foolish."
 <ol>
 <li><i>The Mismeasure of Man</i>, by Stephen J. Gould</li>
 <li><i>Cybernetics: Or Control and Communication in the Animal and the Machine</i>, by Norbert Wiener</li>
-<li><i>An Electric Tabulating System</i>, by Herman Hollerith</li>
 <li><i>As We May Think</i>, by Vannevar Bush</li>
 <li><i>What We Owe the Future</i>, by William MacAskill</li>
 <li><i>Steps to an Ecology of Mind</i>, by Gregory Bateson</li>

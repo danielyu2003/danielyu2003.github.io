@@ -1,8 +1,8 @@
 base_url = "https://blog.danielyu.us"
 
-title = "The Cybernetic Nomad"
+title = "Coding with Y{o}u"
 
-description = "Essays on software/systems, tooling, and cybernetics."
+description = "A history of my thoughts and activities in software development."
 
 [markdown]
 highlight_code = true
@@ -10,4 +10,4 @@ highlight_theme = "gruvbox-dark"
 
 [extra]
 author.name = "Daniel Yu"
-site_name = "The Cybernetic Nomad"
+site_name = "danyou"

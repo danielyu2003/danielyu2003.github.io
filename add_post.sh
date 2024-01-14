@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# Note to future me: Don't move this script!
+
 HELPMSG="Usage: ./add_post"
 DATE=$(date '+%Y-%m-%d')
 
@@ -16,7 +18,7 @@ cat << EOF > index.md
 title = "tmp"
 date = $DATE
 [extra]
-footer = "Feel free to leave comments or requests <a href='https://github.com/danielyu2003/danielyu2003.github.io/discussions'>on the discussions page</a>!"
+footer = "Liked this post? Feel free to leave a comment <a href='https://github.com/danielyu2003/danielyu2003.github.io/discussions'>here</a>!"
 +++
 
 insert summary

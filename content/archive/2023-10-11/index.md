@@ -2,7 +2,7 @@
 title = "An AWK-ward primer"
 date = 2023-10-11
 [extra]
-footer = "Feel free to leave comments or requests <a href='https://github.com/danielyu2003/danielyu2003.github.io/discussions'>on the discussions page</a>!"
+footer = "Liked this post? Feel free to leave a comment <a href='https://github.com/danielyu2003/danielyu2003.github.io/discussions'>here</a>!"
 +++
 
 My first blog post! If you're a fan of old languages, or if you just want to write fast scripts that can easily parse text files, then learning AWK might be for you.
