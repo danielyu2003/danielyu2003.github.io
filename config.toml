@@ -5,7 +5,6 @@ title = "Coding with Y{o}u"
 description = "A history of my thoughts and activities in software development."
 
 generate_feed = true
-feed_filename = "rss.xml"
 
 [markdown]
 highlight_code = true
