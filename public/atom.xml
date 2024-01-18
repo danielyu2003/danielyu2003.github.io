@@ -5,26 +5,8 @@
     <link rel="self" type="application/atom+xml" href="https://blog.danielyu.us/atom.xml"/>
     <link rel="alternate" type="text/html" href="https://blog.danielyu.us"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2023-11-03T00:00:00+00:00</updated>
+    <updated>2023-10-11T00:00:00+00:00</updated>
     <id>https://blog.danielyu.us/atom.xml</id>
-    <entry xml:lang="en">
-        <title>A New Teleological Society</title>
-        <published>2023-11-03T00:00:00+00:00</published>
-        <updated>2023-11-03T00:00:00+00:00</updated>
-        
-        <author>
-          <name>
-            Daniel Yu
-          </name>
-        </author>
-        
-        <link rel="alternate" type="text/html" href="https://blog.danielyu.us/archive/2023-11-03/"/>
-        <id>https://blog.danielyu.us/archive/2023-11-03/</id>
-        
-        <summary type="html">&lt;p&gt;When most people think of cybernetics today, imagery of artificial limbs and other tropes from sci-fi probably come to mind first. In reality, cybernetics is a huge field spanning a vast array of disciplines. But what exactly is cybernetics, and what can it tell us about the world we live in and the issues we face on an individual, societal, and global scale?&lt;&#x2F;p&gt;
-</summary>
-        
-    </entry>
     <entry xml:lang="en">
         <title>An AWK-ward primer</title>
         <published>2023-10-11T00:00:00+00:00</published>
