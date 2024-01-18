@@ -199,9 +199,9 @@ font-family: 'Inconsolata', monospace;
 }
 
 .giscus {
-	padding: 15px;
-	padding-left: 20%;
-	padding-right: 20%;
+padding: 15px;
+padding-left: 20%;
+padding-right: 20%;
 }
 
 /* Zola suggested codeblock CSS */
