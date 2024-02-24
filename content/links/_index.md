@@ -23,22 +23,6 @@ footer = "Stay hungry. Stay foolish."
 </ol>
 </div>
 <div class="arc_post">
-<h1>Readings<br></h1>
-<ol>
-<li><i>The Mismeasure of Man</i>, by Stephen J. Gould</li>
-<li><i>Cybernetics: Or Control and Communication in the Animal and the Machine</i>, by Norbert Wiener</li>
-<li><i>As We May Think</i>, by Vannevar Bush</li>
-<li><i>What We Owe the Future</i>, by William MacAskill</li>
-<li><i>Steps to an Ecology of Mind</i>, by Gregory Bateson</li>
-<li><i>The Printing Press as an Agent of Change</i>, by Elizabeth Eisenstein</li>
-<li><i>The GNU Manifesto</i>, by Richard Stallman</li>
-<li><i>The Cathedral and the Bazaar</i>, by Eric Raymond</li>
-<li><i>Behavior, Purpose, and Teleology</i>, by Norbert Wiener, Julian Bigelow, and Arturo Rosenbluth</li>
-<li><i>The Whole Earth Catalog</i>, by Stewart Brand</li>
-<li><i>The Human Condition</i>, by Hannah Arendt</li>
-</ol>
-</div>
-<div class="arc_post">
 <h1>Resources<br></h1>
 <ol>
 <li><a href="https://en.cppreference.com/w/">C++ Reference</a></li>
