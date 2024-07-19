@@ -10,7 +10,7 @@ My first blog post! If you're a fan of old languages, or if you just want to wri
 
 <!-- more -->
 
-<br>\
+<br>
 <figure>
 <img src="auks.jpg"><br>
 <figcaption>A pair of auks!</figcaption>
@@ -23,7 +23,7 @@ By default, some flavor of AWK is included on macOS and most Linux distributions
 <br>\
 To start with, let's assume we have a CSV file called `names.csv` that we want to process in some way. It might contain a column of names as strings and a column of ages as integers, like such:
 <br>\
-\
+
 ```
 Andrew,22
 Bob,34
@@ -34,7 +34,7 @@ Daniel,59
 
 Now, we want to print the result of a filter applied over each entry/row in the CSV through stdout. Let's say that we want to see the names of people who are at least 30 years old, in addition to the sum of their combined ages. Here's an example of what such a program, which we will name `foo.awk`, might look like (not to worry: I'll explain what each element means).
 <br>\
-\
+
 ```awk
 #!/usr/bin/awk -f
 BEGIN {
@@ -61,7 +61,7 @@ END {
 
 To run our program with an input, we can just call `./foo.awk names.csv`, in addition to granting execution priviliges with `chmod +x foo.awk` if necessary. When an AWK program is run, it reads a file stream line by line. An AWK program is comprised of pattern-action pairs, represented in the form:
 <br>\
-\
+
 ```awk
 pattern1 { 
 	action1
@@ -88,7 +88,7 @@ AWK arrays are associative, meaning that they behave like maps and dictionaries.
 <br>\
 In our block above, we push all of the names of people who are least 50 years old into the array and accumulate their ages into the sum variable. At the end, we use a for loop that iterates over each index in the array. In AWK, loops can be defined in three ways:
 <br>\
-\
+
 ```awk
 # for loop
 for (initialization; condition; increment) {

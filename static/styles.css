@@ -2,7 +2,7 @@
 margin: 0;
 padding: 0;
 box-sizing: border-box;
-color: #ebdbb2;
+color: #5C6166;
 }
 
 html {
@@ -11,7 +11,7 @@ overscroll-behavior: none;
 }
 
 body {
-background-color: #282828;
+background-color: #FCFCFC;
 position: relative;
 min-height: 100vh;
 width: 100%;
@@ -22,7 +22,7 @@ align-items: center;
 
 header {
 text-align: center;
-background-color: #1d2021;
+background-color: #F3F4F5;
 width: 100%;
 position: sticky; 
 top: 0;
@@ -40,11 +40,11 @@ bottom: 0;
 padding: 20px;
 font-family: 'Inconsolata', monospace;
 font-style: italic;
-color: #928374;
+color: #5C6166;
 }
 
 nav {
-border-bottom: 1px solid #a89984;
+border-bottom: 1.5px solid #8A91991A;
 text-align: center;
 padding: 10px;
 }
@@ -97,7 +97,7 @@ text-decoration: none;
 padding: 15px;
 padding-left: 20%;
 padding-right: 20%;
-border-bottom: 1px solid #a89984;
+border-bottom: 1.5px solid #8A91991A;
 line-height: 1.3;
 }
 
@@ -120,7 +120,7 @@ font-family: 'Karla', sans-serif;
 .arc_post > h3 {
 font-family: 'Karla', sans-serif;
 font-style: italic;
-color: #928374;
+color: #787B8099;
 }
 
 .card_post > p, 
@@ -131,7 +131,7 @@ font-size: large;
 }
 
 .card_post > p > code {
-color: #d3869b;
+color: #5C6166;
 }
 
 .card_post > ul > li, .card > ul > li {
@@ -139,7 +139,7 @@ display: inline-block;
 font-style: italic;
 font-family: 'Inconsolata', monospace;
 padding-right: 5px;
-color: #928374;
+color: #5C6166;
 }
 
 .card_post > ol > li, .card > ol > li {
@@ -165,8 +165,8 @@ padding-right: 25px !important;
 
 .card_post > pre {
 padding: 16px;
-background-color: #1d2021;
-border: 1px solid #a89984;
+background-color: #6B7D8F1F;
+border: 1px solid #8A91991A;
 word-wrap: break-word;
 overflow-x: auto;
 overflow-y: hidden;
@@ -177,7 +177,7 @@ white-space: pre-wrap;
 }
 
 .card_post > figure > img {
-border: 1px solid #a89984;
+border: 1px solid #8A91991A;
 }
 
 .card_post > figure > figcaption {
@@ -226,7 +226,7 @@ user-select: none;
 
 pre mark {
 display: block;
-background-color: rgba(254, 252, 232, 0.9);
+background-color: #6B7D8F1F;
 }
 pre table {
 width: 100%;

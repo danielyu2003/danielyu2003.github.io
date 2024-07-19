@@ -4,11 +4,11 @@ title = "Coding with Y{o}u"
 
 description = "A history of my thoughts and activities in software development."
 
-generate_feed = true
+generate_feeds = true
 
 [markdown]
 highlight_code = true
-highlight_theme = "gruvbox-dark"
+highlight_theme = "ayu-light"
 
 [extra]
 author.name = "Daniel Yu"
