@@ -1,7 +1,7 @@
 +++
 title = "Links"
 [extra]
-footer = "Stay hungry. Stay foolish."
+footer = "Check out these amazing people and resources too!"
 +++
 
 <div class="arc_post">
