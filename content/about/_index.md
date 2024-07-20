@@ -1,7 +1,7 @@
 +++
 title = "About"
 [extra]
-footer = "Like city lights, receding."
+footer = "It's more fun to compute!"
 +++
 
 <div class="card_post">
