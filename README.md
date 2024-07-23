@@ -1,10 +1,21 @@
-# danielyu2003.github.io
+# Choropleb
 
-HTML/CSS for my [personal blog](https://blog.danielyu.us)! Check it out if you're interested in me rambling about technology, philosophy, literature, or anything else.
+HTML/CSS for my [personal blog](https://blog.danielyu.us).
+
+## Installation
+
+**Prerequisites:**
+- Zola Static Site Engine
+
+Build the repo with `zola build`.
+
+Host it locally with `zola serve`. 
+
+For more information, take a look at the [official documentation site for Zola](https://www.getzola.org/documentation/getting-started/cli-usage/).
 
 ## Contributing
 
-Want to improve the blog? Open a pull request, or start a discussion [here](https://github.com/danielyu2003/danielyu2003.github.io/discussions) for issues concerning a specific post.
+Feel free to leave comments and suggestions [here](https://github.com/danielyu2003/danielyu2003.github.io/discussions)!
 
 ## License
 
