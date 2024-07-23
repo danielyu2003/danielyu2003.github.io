@@ -5,7 +5,7 @@ HTML/CSS for my [personal blog](https://blog.danielyu.us).
 ## Installation
 
 **Prerequisites:**
-- Zola Static Site Engine
+- Install the Zola Static Site Engine (SSE)
 
 Build the repo with `zola build`.
 
