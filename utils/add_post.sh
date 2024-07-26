@@ -2,7 +2,7 @@
 
 # Note to future me: Don't move this script!
 
-HELPMSG="Usage: ./add_post"
+HELPMSG="usage: ./add_post"
 DATE=$(date '+%Y-%m-%d')
 
 if [ $# != 0 ]; then
@@ -10,8 +10,8 @@ if [ $# != 0 ]; then
 	exit 1
 fi
 
-mkdir content/archive/$DATE
-cd content/archive/$DATE
+mkdir ../content/archive/$DATE
+cd ../content/archive/$DATE
 touch index.md
 cat << EOF > index.md
 +++

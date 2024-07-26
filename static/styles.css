@@ -104,6 +104,7 @@ padding-left: 20%;
 padding-right: 20%;
 border-bottom: 1.5px solid #8A91991A;
 line-height: 1.3;
+/*margin-left: 75px;*/
 }
 
 .card {
@@ -126,6 +127,7 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-style: italic;
 color: #787B8099;
+margin-bottom: 1rem;
 }
 
 .card_post > p, 
@@ -133,6 +135,8 @@ color: #787B8099;
 .arc_post > p {
 font-family: 'Inconsolata', monospace;
 font-size: large;
+margin-top: 1rem;
+margin-bottom: 1rem;
 }
 
 .card_post > p > code {
@@ -212,6 +216,8 @@ padding-right: 20%;
 /* Zola suggested codeblock CSS */
 
 pre {
+margin-top: 1.5rem;
+margin-bottom: 1.5rem;
 padding: 1rem;
 overflow: auto;
 }
@@ -233,6 +239,7 @@ pre mark {
 display: block;
 background-color: #6B7D8F1F;
 }
+
 pre table {
 width: 100%;
 border-collapse: collapse;
@@ -240,3 +247,60 @@ border-collapse: collapse;
 
 /* end copied css block */
 
+/* W3 sidebar code */
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 175px;
+  background-color: #F3F4F5;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+
+}
+
+.sidebar h3 {
+  text-decoration: none;
+  transition: 0.15s ease-in-out;
+  font-family: 'Inconsolata', monospace;
+  font-size: 16px;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  padding: 16px;
+  text-decoration: none;
+  transition: 0.15s ease-in-out;
+  font-family: 'Inconsolata', monospace;
+  font-size: 16px;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover {
+  background-color: #555;
+  color: white;
+}
+
+@media screen and (max-width: 900px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+/* end copied css block */

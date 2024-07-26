@@ -33,7 +33,7 @@
 </script>
 <body>
 
-<header>
+<!-- <header>
 <br>
 <div class="logo">{{ config.title }}</div>
 <nav><ul>
@@ -42,7 +42,15 @@
 <li><a href="{{ get_url(path='@/archive/_index.md') }}">Archive</a></li>
 <li><a href="{{ get_url(path='@/links/_index.md') }}">Links</a></li>
 </ul></nav>
-</header>
+</header> -->
+
+<div class="sidebar">
+<a style="pointer-events: none; cursor: default;"><h3>Choropleb</h3></a>
+<a href="{{ get_url(path='@/_index.md') }}">Home</a>
+<a href="{{ get_url(path='@/about/_index.md') }}">About</a>
+<a href="{{ get_url(path='@/archive/_index.md') }}">Archive</a>
+<a href="{{ get_url(path='@/links/_index.md') }}">Links</a>
+</div>
 
 {% block content %}
 {% endblock %}

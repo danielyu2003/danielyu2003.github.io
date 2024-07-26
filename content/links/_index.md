@@ -5,7 +5,7 @@ footer = "Check out these amazing people and resources too!"
 +++
 
 <div class="arc_post">
-<h1>Socials<br></h1>
+<h1 style="margin-bottom: 0.5rem;">Socials<br></h1>
 <ol>
 <li><a href="https://github.com/danielyu2003">Github</a></li>
 <li><a rel="me" href="https://mastodon.social/@danyou">Mastodon</a></li>
@@ -13,7 +13,7 @@ footer = "Check out these amazing people and resources too!"
 </ol>
 </div>
 <div class="arc_post">
-<h1>Others<br></h1>
+<h1 style="margin-bottom: 0.5rem;">Others<br></h1>
 <ol>
 <li><a href="https://substack.com/@tektology">Tektological҉'s Newsletter</a></li>
 <li><a href="https://www.contrapoints.com/">Contrapoints</a></li>
@@ -23,7 +23,7 @@ footer = "Check out these amazing people and resources too!"
 </ol>
 </div>
 <div class="arc_post">
-<h1>Resources<br></h1>
+<h1 style="margin-bottom: 0.5rem;">Resources<br></h1>
 <ol>
 <li><a href="https://en.cppreference.com/w/">C++ Reference</a></li>
 <li><a href="https://doc.rust-lang.org/reference/">Rust Reference</a></li>
