@@ -1,7 +1,5 @@
 #!/bin/sh
 
-# Note to future me: Don't move this script!
-
 HELPMSG="usage: ./add_post"
 DATE=$(date '+%Y-%m-%d')
 
@@ -10,8 +8,16 @@ if [ $# != 0 ]; then
 	exit 1
 fi
 
-mkdir ../content/archive/$DATE
-cd ../content/archive/$DATE
+# Get the directory of the script
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+
+# Create the new directory in the right location
+POST_DIR="$SCRIPT_DIR/../content/archive/$DATE"
+mkdir -p "$POST_DIR"
+
+# Change to the new directory and create index.md
+cd "$POST_DIR"
+
 touch index.md
 cat << EOF > index.md
 +++
@@ -30,4 +36,4 @@ insert rest of content
 
 EOF
 
-echo created index.md at content/archive/$DATE
+echo "created index.md at content/archive/$DATE"
