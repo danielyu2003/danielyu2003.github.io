@@ -1,4 +1,4 @@
-# Choropleb
+# daniel yu
 
 HTML/CSS for my [personal blog](https://blog.danielyu.us).
 
@@ -7,7 +7,7 @@ HTML/CSS for my [personal blog](https://blog.danielyu.us).
 **Prerequisites:**
 - Install the Zola Static Site Engine (SSE)
 
-Build the repo with `zola build`.
+Build the site with `zola build`.
 
 Host it locally with `zola serve`. 
 
