@@ -12,19 +12,7 @@
 <meta name="author" content="{{ config.extra.author.name }}">
 <link href="{{ config.base_url }}/styles.css" rel="stylesheet">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-
-<link rel="apple-touch-icon" sizes="180x180" href="{{ config.base_url }}/icons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="{{ config.base_url }}/icons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="{{ config.base_url }}/icons/favicon-16x16.png">
-<link rel="manifest" href="{{ config.base_url }}/icons/site.webmanifest">
-<link rel="shortcut icon" href="{{ config.base_url }}/icons/favicon.ico">
-<meta name="msapplication-TileColor" content="#00aba9">
-<meta name="msapplication-config" content="{{ config.base_url }}/icons/browserconfig.xml">
-
-<meta name="theme-color" content="#ffffff">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ config.base_url }}/favicon.png">
 
 {% block rss %}
   <link rel="alternate" type="application/atom+xml" title="RSS" href="{{ get_url(path='atom.xml', trailing_slash=false) }}">
