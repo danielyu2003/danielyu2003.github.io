@@ -1,7 +1,7 @@
 +++
 title = "About"
 [extra]
-footer = "It's more fun to compute!"
+footer = "This blog was built with <a href='https://oxal.org/projects/sakura/'>Sakura</a> and the <a href='https://www.getzola.org/'>Zola engine</a>."
 +++
 
 <div class="card_post">
