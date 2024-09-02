@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>Choropleb</title>
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="A portrait of a dilettante.">
+<meta name="author" content="Daniel Yu">
+<link href="https:&#x2F;&#x2F;blog.danielyu.us/styles.css" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="https:&#x2F;&#x2F;blog.danielyu.us/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https:&#x2F;&#x2F;blog.danielyu.us/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https:&#x2F;&#x2F;blog.danielyu.us/icons/favicon-16x16.png">
+<link rel="manifest" href="https:&#x2F;&#x2F;blog.danielyu.us/icons/site.webmanifest">
+<link rel="shortcut icon" href="https:&#x2F;&#x2F;blog.danielyu.us/icons/favicon.ico">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="msapplication-config" content="https:&#x2F;&#x2F;blog.danielyu.us/icons/browserconfig.xml">
+
+<meta name="theme-color" content="#ffffff">
+
+
+  <link rel="alternate" type="application/atom+xml" title="RSS" href="https://blog.danielyu.us/atom.xml">
+
+
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KX18D3WPKP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KX18D3WPKP');
+</script>
+<body>
+
+<div class="sidebar">
+<h1>(╭ರ_•́) daniel yu</h1>
+<a href="https://blog.danielyu.us/">Home</a> | 
+<a href="https://blog.danielyu.us/about/">About</a> | 
+<a href="https://blog.danielyu.us/archive/">Archive</a> | 
+<a href="https://blog.danielyu.us/links/">Links</a>
+</div>
+
+
+<div class="card_post">
+<h1>An AWK-ward primer</h1>
+<h3>2023-10-11</h3>
+<span id="continue-reading"></span><figure>
+<img src="auks.jpg">
+<figcaption>A pair of auks!</figcaption>
+</figure>
+<p>I'll skip the history to let us get straight into the meat of learning the tool/language, although you should check out the <a href="https://www.gnu.org/software/gawk/manual/gawk.html">GNU AWK reference</a> to learn more.</p>
+<p>By default, some flavor of AWK is included on macOS and most Linux distributions. Windows users must build and install AWK manually: I recommend <a href="https://gnuwin32.sourceforge.net/packages/gawk.htm">GAWK for Windows</a>. Depending on which variant you have, there may be extra or missing features. I'll be covering the base language supported by all versions of AWK.</p>
+<p>To start with, let's assume we have a CSV file called <code>names.csv</code> that we want to process in some way. It might contain a column of names as strings and a column of ages as integers, like such:</p>
+<pre style="background-color:#fafafa;color:#61676c;"><code><span>Andrew,22
+</span><span>Bob,34
+</span><span>Caroline,90
+</span><span>Daniel,59
+</span></code></pre>
+<p>Now, we want to print the result of a filter applied over each entry/row in the CSV through stdout. Let's say that we want to see the names of people who are at least 30 years old, in addition to the sum of their combined ages. Here's an example of what such a program, which we will name <code>foo.awk</code>, might look like (not to worry: I'll explain what each element means).</p>
+<pre data-lang="awk" style="background-color:#fafafa;color:#61676c;" class="language-awk "><code class="language-awk" data-lang="awk"><span style="font-style:italic;color:#abb0b6;">#!/usr/bin/awk -f
+</span><span style="color:#ff8f40;">BEGIN </span><span>{
+</span><span>	</span><span style="font-style:italic;color:#55b4d4;">FS</span><span style="color:#ed9366;">=</span><span style="color:#86b300;">&quot;,&quot;
+</span><span>	sum</span><span style="color:#ed9366;">=</span><span style="color:#ff8f40;">0
+</span><span>	i</span><span style="color:#ed9366;">=</span><span style="color:#ff8f40;">0
+</span><span>	min</span><span style="color:#ed9366;">=</span><span style="color:#ff8f40;">50
+</span><span>}
+</span><span>
+</span><span style="font-style:italic;color:#55b4d4;">$2 </span><span style="color:#ed9366;">&gt;= </span><span>min {
+</span><span>	arr</span><span style="color:#ed9366;">[</span><span>i</span><span style="color:#ed9366;">]=</span><span style="font-style:italic;color:#55b4d4;">$1
+</span><span>	sum</span><span style="color:#ed9366;">+=</span><span style="font-style:italic;color:#55b4d4;">$2
+</span><span>	i</span><span style="color:#ed9366;">++
+</span><span>}
+</span><span>
+</span><span style="color:#ff8f40;">END </span><span>{
+</span><span>	</span><span style="color:#fa6e32;">for </span><span>(ind </span><span style="color:#ed9366;">in </span><span>arr) {
+</span><span>		</span><span style="color:#fa6e32;">print </span><span>arr</span><span style="color:#ed9366;">[</span><span>ind</span><span style="color:#ed9366;">] </span><span style="color:#86b300;">&quot; is at least &quot; </span><span>min
+</span><span>	}
+</span><span>	</span><span style="color:#fa6e32;">print </span><span>sum 
+</span><span>}
+</span></code></pre>
+<p>To run our program with an input, we can just call <code>./foo.awk names.csv</code>, in addition to granting execution priviliges with <code>chmod +x foo.awk</code> if necessary. When an AWK program is run, it reads a file stream line by line. An AWK program is comprised of pattern-action pairs, represented in the form:</p>
+<pre data-lang="awk" style="background-color:#fafafa;color:#61676c;" class="language-awk "><code class="language-awk" data-lang="awk"><span>pattern1 { 
+</span><span>	action1
+</span><span>}
+</span><span>pattern2 { 
+</span><span>	action2
+</span><span>	action3
+</span><span>}
+</span><span>...
+</span></code></pre>
+<p>A pattern is essentially a condition that each line might satisfy. If a line happens to satisfy the pattern, then the actions which correspond to that pattern are executed sequentially.</p>
+<p>When we execute our program from a terminal, the first line <code>#!/usr/bin/awk -f</code> invokes the AWK program with the <code>-f</code> flag set. The -f flag indicates that we want AWK to interpret our source file as a program. If you happen to be familiar with bash scripts, you may recognize this as a shebang (#!) sequence. Note that the location of the awk program (<code>/usr/bin/awk</code>) may differ based on your operating system or where you installed it.</p>
+<p>Our first pattern is designated by the reserved keyword <code>BEGIN</code>. All actions which correspond to the BEGIN pattern are executed at the start. This makes the BEGIN block an ideal place to initialize variables that we would like to use later! The <code>END</code> pattern is similar, but is applied at the end of the program respectively.</p>
+<p>Although by default AWK seperates fields in a line using whitespace, we can change the delimiter by setting <code>FS</code> (the "field seperator") to a string we would like to use instead. In this case, we set FS to a comma since that's the default for a CSV file. We also define three variables <code>sum</code>, <code>i</code> and <code>min</code>, which hold numeric values. Note that in AWK, there are only two types: strings and numbers. AWK automatically interprets numeric fields as numbers.</p>
+<p>Our second pattern, <code>$2 &gt;= min</code>, is matched when the second field in each line ($2) is greater than or equal to min (which we had set to 50). The fields in a line are represented by a dollar sign and a number. For example, the sixteenth field of a line is $16, the first is $1, and so on. AWK reserves the variable <code>NF</code> to the number of fields in the current line. In addition, $0 is a special case that represents the entire line.</p>
+<p>AWK arrays are associative, meaning that they behave like maps and dictionaries. Arrays not have to be initialized before being used. Arrays follow the same naming convention as other user-defined variables, and array elements can be accessed by using the [] operator as in C or C++.</p>
+<p>In our block above, we push all of the names of people who are least 50 years old into the array and accumulate their ages into the sum variable. At the end, we use a for loop that iterates over each index in the array. In AWK, loops can be defined in three ways:</p>
+<pre data-lang="awk" style="background-color:#fafafa;color:#61676c;" class="language-awk "><code class="language-awk" data-lang="awk"><span style="font-style:italic;color:#abb0b6;"># for loop
+</span><span style="color:#f29718;">for </span><span>(initialization; condition; increment) {
+</span><span>	body
+</span><span>}
+</span><span>
+</span><span style="font-style:italic;color:#abb0b6;"># while loop
+</span><span style="color:#f29718;">while </span><span>(condition) {
+</span><span>	body
+</span><span>}
+</span><span>
+</span><span style="font-style:italic;color:#abb0b6;"># array for loop
+</span><span style="color:#f29718;">for </span><span>(i </span><span style="color:#ed9366;">in </span><span>array) {
+</span><span>	</span><span style="color:#fa6e32;">do </span><span>something with array</span><span style="color:#ed9366;">[</span><span>i</span><span style="color:#ed9366;">]
+</span><span>}
+</span></code></pre>
+<p>To send output to stdout, AWK has the <code>print</code> statement. In our example above, the inputs <code>arr[ind] " is at least " min</code> are all concatenated into a single string that ends up being printed. In addition, AWK also has the <code>printf</code> statement that allows for formatted printing similar to the C function printf. Using these print statements, it is possible to modify our input CSV by redirecting the output of our program back into the CSV (ex. <code>./foo.awk names.csv &gt; names.csv</code>).</p>
+<p>I hope this short primer has been useful to you! There's a ton of other features that AWK (and its variants) possess, but I just wanted to cover a common usecase and the basic fundamentals that allow you to get right into using it. For more information, check out the <a href="https://man7.org/linux/man-pages/man1/awk.1p.html">man page for AWK</a> and the <a href="https://www.gnu.org/software/gawk/manual/gawk.html">GNU AWK manual</a>. It's been a pleasure to Code with Y{o}u!</p>
+
+<br>
+</div>
+<script src="https://giscus.app/client.js"
+        data-repo="danielyu2003/danielyu2003.github.io"
+        data-repo-id="R_kgDOIuK0mw"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOIuK0m84CY3V_"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="0"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="https://blog.danielyu.us/giscus_theme.css"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+<noscript><footer>
+Enable JavaScript if you'd like to see comments!
+</footer></noscript>
+
+
+</body>
+</html>

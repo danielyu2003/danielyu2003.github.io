@@ -3,19 +3,20 @@
 {% block content %}
 {{ section.content | safe }}
 
-<!-- access top 5 most recent pages -->
+<!-- access top 10 most recent pages -->
 
 {% set section = get_section(path="archive/_index.md") %}
 
+<ol class="cards">
 {% for page in section.pages %}
-  {% if loop.index > 5 %}{% break %}{% endif %}
-  <a href="{{ page.permalink | safe }}" class="card_link"><div class="card">
+  {% if loop.index > 10 %}{% break %}{% endif %}
+  <li><a href="{{ page.permalink | safe }}" class="card_link"><div class="card">
     <h1>{{ page.title }}<br></h1>
     <h3>{{ page.date }}</h3>
     <p>{{ page.summary | safe }}</p>
-  </div></a>
-  
+  </div></a></li>
 {% endfor %}
+</ol>
 
 <footer>
 <p>If you'd like to keep up with my posts, feel free to <a href="{{ get_url(path='atom.xml', trailing_slash=false) }}">add my RSS feed!</a></p>

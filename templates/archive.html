@@ -3,7 +3,7 @@
 {% block section_specific %}
 {% for year, posts in section.pages | group_by(attribute="year") %}
 <div class="arc_post">
-<h1 style="margin-bottom: 0.5rem;">{{ year }}</h1>
+<h1>{{ year }}</h1>
 <ul>
 {% for post in posts %}
 <li><a href="{{ post.permalink }}">{{ post.date }}: {{ post.title }}</a></li>

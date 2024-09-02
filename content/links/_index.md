@@ -1,29 +1,18 @@
 +++
 title = "Links"
 [extra]
-footer = "Check out these amazing people and resources too!"
+footer = "Check out these cool sites too!"
 +++
 
 <div class="arc_post">
-<h1 style="margin-bottom: 0.5rem;">Socials<br></h1>
+<h1>Socials</h1>
 <ol>
 <li><a href="https://github.com/danielyu2003">Github</a></li>
-<li><a rel="me" href="https://mastodon.social/@danyou">Mastodon</a></li>
 <li><a href="https://www.linkedin.com/in/danielyu2003/">LinkedIn</a></li>
 </ol>
 </div>
 <div class="arc_post">
-<h1 style="margin-bottom: 0.5rem;">Others<br></h1>
-<ol>
-<li><a href="https://substack.com/@tektology">Tektological҉'s Newsletter</a></li>
-<li><a href="https://www.contrapoints.com/">Contrapoints</a></li>
-<li><a href="https://www.patreon.com/PhilosophyTube">Philosophy Tube</a></li>
-<li><a href="https://www.youtube.com/@Shaun_vids/videos">Shaun</a></li>
-<li><a href="https://www.youtube.com/@Exurb1a/videos">Exurb1a</a></li>
-</ol>
-</div>
-<div class="arc_post">
-<h1 style="margin-bottom: 0.5rem;">Resources<br></h1>
+<h1>Resources</h1>
 <ol>
 <li><a href="https://en.cppreference.com/w/">C++ Reference</a></li>
 <li><a href="https://doc.rust-lang.org/reference/">Rust Reference</a></li>
