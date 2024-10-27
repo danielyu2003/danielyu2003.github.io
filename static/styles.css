@@ -1,9 +1,3 @@
-/* Sakura.css v1.5.0
- * ================
- * Minimal css theme.
- * Project: https://github.com/oxalorg/sakura/
- */
-
 /* Body */
 html {
   font-size: 62.5%;
@@ -15,8 +9,8 @@ body {
   line-height: 1.618;
   max-width: 38em;
   margin: auto;
-  color: #4a4a4a;
-  background-color: #f9f9f9;
+  color: #5c6166; /* replaced #4a4a4a */
+  background-color: #FAFAFA; /* replaced #f9f9f9 */
   padding: 13px;
 }
 
@@ -76,19 +70,19 @@ small, sub, sup {
 }
 
 hr {
-  border-color: #1d7484;
+  border-color: #22a4e6; /* replaced #1d7484 */
 }
 
 a {
   text-decoration: none;
-  color: #1d7484;
+  color: #d99a3e; /* replaced #1d7484 with yellow */
 }
 a:visited {
-  color: #144f5a;
+  color: #b09045; /* a more washed-out, dark yellow */
 }
 a:hover {
-  color: #982c61;
-  border-bottom: 2px solid #4a4a4a;
+  color: #d99a3e; /* replace #f07171 with yellow */
+  border-bottom: 2px solid #d99a3e; /* keeps yellow for the underline */
 }
 
 ul {
@@ -108,9 +102,9 @@ blockquote {
   padding-top: 0.8em;
   padding-bottom: 0.8em;
   padding-right: 0.8em;
-  border-left: 5px solid #1d7484;
+  border-left: 5px solid #22a4e6; /* replaced #1d7484 */
   margin-bottom: 2.5rem;
-  background-color: #f1f1f1;
+  background-color: #5c61660f; /* replaced #f1f1f1 */
 }
 
 blockquote p {
@@ -126,7 +120,7 @@ img, video {
 
 /* Pre and Code */
 pre {
-  background-color: #f1f1f1;
+  background-color: #5c61660f; /* replaced #f1f1f1 */
   display: block;
   padding: 1em;
   overflow-x: auto;
@@ -138,7 +132,7 @@ pre {
 code, kbd, samp {
   font-size: 0.9em;
   padding: 0 0.5em;
-  background-color: #f1f1f1;
+  background-color: #5c61660f; /* replaced #f1f1f1 */
   white-space: pre-wrap;
 }
 
@@ -159,15 +153,15 @@ table {
 
 td, th {
   padding: 0.5em;
-  border-bottom: 1px solid #f1f1f1;
+  border-bottom: 1px solid #5c61660f; /* replaced #f1f1f1 */
 }
 
-/* Buttons, forms and input */
+/* Buttons, forms, and input */
 input, textarea {
-  border: 1px solid #4a4a4a;
+  border: 1px solid #5c6166; /* replaced #4a4a4a */
 }
 input:focus, textarea:focus {
-  border: 1px solid #1d7484;
+  border: 1px solid #22a4e6; /* replaced #1d7484 */
 }
 
 textarea {
@@ -180,10 +174,10 @@ textarea {
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
-  background-color: #1d7484;
-  color: #f9f9f9;
+  background-color: #22a4e6; /* replaced #1d7484 */
+  color: #fcfcfc; /* replaced #f9f9f9 */
   border-radius: 1px;
-  border: 1px solid #1d7484;
+  border: 1px solid #22a4e6; /* replaced #1d7484 */
   cursor: pointer;
   box-sizing: border-box;
 }
@@ -192,8 +186,8 @@ textarea {
   opacity: 0.5;
 }
 .button:hover, button:hover, input[type=submit]:hover, input[type=reset]:hover, input[type=button]:hover, input[type=file]::file-selector-button:hover {
-  background-color: #982c61;
-  color: #f9f9f9;
+  background-color: #f07171; /* replaced #982c61 */
+  color: #fcfcfc; /* replaced #f9f9f9 */
   outline: 0;
 }
 .button:focus-visible, button:focus-visible, input[type=submit]:focus-visible, input[type=reset]:focus-visible, input[type=button]:focus-visible, input[type=file]::file-selector-button:focus-visible {
@@ -202,22 +196,22 @@ textarea {
 }
 
 textarea, select, input {
-  color: #4a4a4a;
-  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  color: #5c6166; /* replaced #4a4a4a */
+  padding: 6px 10px;
   margin-bottom: 10px;
-  background-color: #f1f1f1;
-  border: 1px solid #f1f1f1;
+  background-color: #5c61660f; /* replaced #f1f1f1 */
+  border: 1px solid #5c61660f; /* replaced #f1f1f1 */
   border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box;
 }
 textarea:focus, select:focus, input:focus {
-  border: 1px solid #1d7484;
+  border: 1px solid #22a4e6; /* replaced #1d7484 */
   outline: 0;
 }
 
 input[type=checkbox]:focus {
-  outline: 1px dotted #1d7484;
+  outline: 1px dotted #22a4e6; /* replaced #1d7484 */
 }
 
 label, legend, fieldset {
@@ -237,6 +231,11 @@ label, legend, fieldset {
   border: solid;
   border-radius: 25px;
   padding: 2rem;
+  color: #5c6166;
+}
+
+.card:hover {
+  color: #3e4245;
 }
 
 .card > h3 {
@@ -247,6 +246,10 @@ label, legend, fieldset {
 .sidebar {
   padding-bottom: 2rem;
   border-bottom: solid;
+}
+
+.sidebar > a {
+  color: #d99a3e;
 }
 
 figcaption {
@@ -265,14 +268,20 @@ footer {
   padding-top: 2rem;
 }
 
-.arc_post > ul {
+.arc_post > ul, .arc_post > ol {
 /*  border-top: solid;*/
   list-style-type: none;
   padding: 0px;
 }
 
-.arc_post > ol {
+.arc_post > ul > li > a {
 /*  border-top: solid;*/
-  list-style-type: none;
-  padding: 0px;
+  color: #5c6166;
+  
+}
+
+.arc_post > ul > li > a:hover {
+/*  border-top: solid;*/
+  color: #3e4245;
+  border-bottom: 2px solid #3e4245; /* keeps yellow for the underline */
 }
