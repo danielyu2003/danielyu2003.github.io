@@ -2,7 +2,7 @@ base_url = "https://yudaniel.com"
 
 title = "daniel yu"
 
-description = "My personal blog about science and humanity."
+description = "A collection of my thoughts about science, art, and living."
 
 generate_feeds = true
 

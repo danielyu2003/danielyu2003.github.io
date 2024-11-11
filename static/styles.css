@@ -285,3 +285,7 @@ footer {
   color: #2b2d2f;
   border-bottom: 2px solid #2b2d2f; /* keeps yellow for the underline */
 }
+
+.cryptedmail:after {
+  content: attr(data-name) "@" attr(data-domain) "." attr(data-tld); 
+}

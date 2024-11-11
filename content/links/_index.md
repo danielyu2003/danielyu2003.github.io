@@ -1,7 +1,7 @@
 +++
 title = "Links"
 [extra]
-footer = "Check out these cool sites too!"
+footer = "Feel free to explore these sites too!"
 +++
 
 <div class="arc_post">
@@ -9,6 +9,13 @@ footer = "Check out these cool sites too!"
 <ol>
 <li><a href="https://github.com/danielyu2003">Github</a></li>
 <li><a href="https://www.linkedin.com/in/danielyu2003/">LinkedIn</a></li>
+<li>
+<a href="#" class="cryptedmail"
+   data-name="yudaniel316"
+   data-domain="icloud"
+   data-tld="com"
+   onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"></a>
+</li>
 </ol>
 </div>
 <div class="arc_post">

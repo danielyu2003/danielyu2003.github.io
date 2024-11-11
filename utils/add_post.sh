@@ -25,7 +25,7 @@ title = "tmp"
 date = $DATE
 authors = ["Daniel Yu"]
 [extra]
-footer = "Liked this post? Feel free to leave a comment below!"
+footer = ""
 +++
 
 insert summary

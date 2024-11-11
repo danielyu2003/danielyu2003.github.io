@@ -3,7 +3,7 @@ title = "An AWK-ward primer"
 date = 2023-10-11
 authors = ["Daniel Yu"]
 [extra]
-footer = "Liked this post? Feel free to leave a comment below!"
+footer = ""
 +++
 
 My first blog post! If you're a fan of old languages, or if you just want to write fast scripts that can easily parse text files, then learning AWK might be for you.
