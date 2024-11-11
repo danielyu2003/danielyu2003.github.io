@@ -1,6 +1,6 @@
 # daniel yu
 
-HTML/CSS for my [personal blog](https://blog.danielyu.us).
+HTML/CSS for my [personal blog](https://blog.yudaniel.com).
 
 ## Installation
 

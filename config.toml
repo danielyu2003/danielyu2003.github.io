@@ -1,8 +1,8 @@
-base_url = "https://blog.danielyu.us"
+base_url = "https://blog.yudaniel.com"
 
-title = "Daniel Yu"
+title = "daniel yu"
 
-description = "Daniel Yu's Blog"
+description = "My personal blog about science and humanity."
 
 generate_feeds = true
 
@@ -12,4 +12,4 @@ highlight_theme = "ayu-light"
 
 [extra]
 author.name = "Daniel Yu"
-site_name = "Daniel Yu"
+site_name = "daniel yu"
