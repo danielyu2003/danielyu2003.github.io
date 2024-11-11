@@ -12,7 +12,10 @@
 <meta name="author" content="{{ config.extra.author.name }}">
 <link href="{{ config.base_url }}/styles.css" rel="stylesheet">
 
-<link rel="icon" type="image/png" sizes="32x32" href="{{ config.base_url }}/favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ config.base_url }}/favs/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ config.base_url }}/favs/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ config.base_url }}/favs/favicon-16x16.png">
+<link rel="manifest" href="{{ config.base_url }}/favs/site.webmanifest">
 
 {% block rss %}
   <link rel="alternate" type="application/atom+xml" title="RSS" href="{{ get_url(path='atom.xml', trailing_slash=false) }}">
