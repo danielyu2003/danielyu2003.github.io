@@ -8,8 +8,8 @@ footer = ""
 
 <br>
 <figure>
-<img src="monologue.jpg">
-<figcaption>Monologue, by Kristoffer Zetterstrand (2007).</figcaption>
+<img src="stevens.png">
+<figcaption>A photo I took of the sun over the Hudson River.</figcaption>
 </figure>
 <br>
 
