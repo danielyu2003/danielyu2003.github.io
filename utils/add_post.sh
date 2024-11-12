@@ -24,6 +24,7 @@ cat << EOF > index.md
 title = "tmp"
 date = $DATE
 authors = ["Daniel Yu"]
+feed = true
 [extra]
 footer = ""
 +++

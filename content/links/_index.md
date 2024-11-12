@@ -5,10 +5,8 @@ footer = "Feel free to explore these sites too!"
 +++
 
 <div class="arc_post">
-<h1>Socials</h1>
+<h1>socials</h1>
 <ol>
-<li><a href="https://github.com/danielyu2003">Github</a></li>
-<li><a href="https://www.linkedin.com/in/danielyu2003/">LinkedIn</a></li>
 <li>
 <a href="#" class="cryptedmail"
    data-name="yudaniel316"
@@ -16,10 +14,12 @@ footer = "Feel free to explore these sites too!"
    data-tld="com"
    onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"></a>
 </li>
+<li><a href="https://github.com/danielyu2003">github</a></li>
+<li><a href="https://www.linkedin.com/in/danielyu2003/">linkedIn</a></li>
 </ol>
 </div>
 <div class="arc_post">
-<h1>Resources</h1>
+<h1>resources</h1>
 <ol>
 <li><a href="https://en.cppreference.com/w/">C++ Reference</a></li>
 <li><a href="https://doc.rust-lang.org/reference/">Rust Reference</a></li>

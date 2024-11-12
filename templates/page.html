@@ -7,6 +7,10 @@
 {{ page.content | replace(from=page.summary, to="") | safe }}
 <br>
 </div>
+<footer>
+<noscript>
+Enable JavaScript if you'd like to see comments!
+</noscript>
 <script src="https://giscus.app/client.js"
         data-repo="danielyu2003/danielyu2003.github.io"
         data-repo-id="R_kgDOIuK0mw"
@@ -21,9 +25,7 @@
         data-lang="en"
         data-loading="lazy"
         crossorigin="anonymous"
-        async>
-</script>
-<noscript><footer>
-Enable JavaScript if you'd like to see comments!
-</footer></noscript>
+        async></script>
+</footer>
+
 {% endblock content %}

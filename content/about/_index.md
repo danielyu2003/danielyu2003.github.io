@@ -6,8 +6,6 @@ footer = ""
 
 <div class="card_post">
 
-# About
-
 <br>
 <figure>
 <img src="monologue.jpg">

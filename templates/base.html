@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <meta name="description" content="{{ config.description }}">
-<meta name="author" content="{{ config.extra.author.name }}">
+<meta name="author" content="{{ config.author }}">
 <link href="{{ config.base_url }}/styles.css" rel="stylesheet">
 
 <link rel="apple-touch-icon" sizes="180x180" href="{{ config.base_url }}/favs/apple-touch-icon.png">
@@ -17,9 +17,9 @@
 <link rel="icon" type="image/png" sizes="16x16" href="{{ config.base_url }}/favs/favicon-16x16.png">
 <link rel="manifest" href="{{ config.base_url }}/favs/site.webmanifest">
 
-{% block rss %}
-  <link rel="alternate" type="application/atom+xml" title="RSS" href="{{ get_url(path='atom.xml', trailing_slash=false) }}">
-{% endblock %}
+<!-- {% block rss %}
+  <link rel="alternate" type="application/atom+xml" title="RSS" href="{{ get_url(path='/atom.xml', trailing_slash=false) }}">
+{% endblock %} -->
 
 </head>
 
@@ -37,11 +37,11 @@
 <body>
 
 <div class="sidebar">
-<h1>daniel yu</h1>
-<a href="{{ get_url(path='@/_index.md') }}">Home</a> | 
-<a href="{{ get_url(path='@/about/_index.md') }}">About</a> | 
-<a href="{{ get_url(path='@/archive/_index.md') }}">Archive</a> | 
-<a href="{{ get_url(path='@/links/_index.md') }}">Links</a>
+<h1>{{ config.title }}</h1>
+<a href="{{ get_url(path='@/_index.md') }}">home</a> | 
+<a href="{{ get_url(path='@/about/_index.md') }}">about</a> | 
+<a href="{{ get_url(path='@/archive/_index.md') }}">archive</a> | 
+<a href="{{ get_url(path='@/links/_index.md') }}">links</a>
 </div>
 
 {% block content %}

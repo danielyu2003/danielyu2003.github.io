@@ -266,6 +266,7 @@ figcaption {
 footer {
   border-top: solid;
   padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .arc_post > ul, .arc_post > ol {
@@ -287,5 +288,6 @@ footer {
 }
 
 .cryptedmail:after {
-  content: attr(data-name) "@" attr(data-domain) "." attr(data-tld); 
+/*  content: attr(data-name) "@" attr(data-domain) "." attr(data-tld); */
+  content: "email";
 }

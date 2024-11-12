@@ -2,6 +2,7 @@
 title = "An AWK-ward primer"
 date = 2023-10-11
 authors = ["Daniel Yu"]
+feed = true
 [extra]
 footer = ""
 +++
