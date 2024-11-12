@@ -1,11 +1,12 @@
 # daniel yu
 
-HTML/CSS for my [personal blog](https://blog.yudaniel.com).
+HTML/CSS for my [personal blog](https://yudaniel.com).
 
 ## Installation
 
 **Prerequisites:**
-- Install the Zola Static Site Engine (SSE)
+- Linux/MacOS
+- Zola Static Site Engine (SSE)
 
 Build the site with `zola build`.
 
