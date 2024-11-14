@@ -15,7 +15,8 @@ footer = "Feel free to explore these sites too!"
    onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"></a>
 </li>
 <li><a href="https://github.com/danielyu2003">github</a></li>
-<li><a href="https://www.linkedin.com/in/danielyu2003/">linkedIn</a></li>
+<li><a href="https://bsky.app/profile/yudaniel.bsky.social">bluesky</a></li>
+<li><a href="https://www.linkedin.com/in/danielyu2003/">linkedin</a></li>
 </ol>
 </div>
 <div class="arc_post">
